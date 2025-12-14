@@ -49,3 +49,15 @@ html {
 .grid-cols-auto {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+ul.bg-darkHover {
+  background-color: var(--dark-theme);
+  ;
+}
+
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--text-color);
+  text-underline-offset: 2px;
+  
+}
