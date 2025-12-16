@@ -35,6 +35,9 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import manoshri_profile_img from './manoshri-profile-img.jpg';
+import manoshri_logo_white from './manoshri-logo-white.png';
+import manoshri_logo_dark from './manoshri-logo-dark.png'
 
 export const assets = {
     user_image,
@@ -73,7 +76,11 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    manoshri_profile_img,
+    manoshri_logo_white,
+    manoshri_logo_dark
+    
 };
 
 export const workData = [
