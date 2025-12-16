@@ -11,7 +11,7 @@ function Header({ isDarkMode }: { isDarkMode: boolean }) {
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
             >
-                <Image src={assets.profile_img} alt='profile-image' className='rounded-full w-32' />
+                <Image src={assets.manoshri_profile_img} alt='profile-image' className='rounded-full w-32' />
             </motion.div>
             <motion.h3
                 initial={{ y: -20, opacity: 0 }}
