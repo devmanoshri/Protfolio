@@ -55,7 +55,7 @@ function Contact({ isDarkMode }: { isDarkMode: boolean }) {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.7 }}
-                className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.</motion.p>
+                className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>I'd love to hear from you! I'm currently open to new job opportunities and would be glad to connect. If you have any questions, comments, or feedback, please feel free to use the form below.</motion.p>
 
             <motion.form
                 initial={{ opacity: 0 }}
