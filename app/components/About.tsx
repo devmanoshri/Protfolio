@@ -35,7 +35,7 @@ function About({ isDarkMode }: { isDarkMode: boolean }) {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
                     className='flex-1'>
-                    <p className='mb-10 max-w-2xl font-ovo'>I work as a frontend developer in Oslo with over 6 years of experience in web and frontend development, with solid expertise in PHP, MySQL, WordPress, SCSS and JavaScript, as well as knowledge of modern frameworks such as Angular and TypeScript. I develop responsive websites, e-commerce solutions and custom systems, handle databases, Git version control and design implementation via Figma. I am known for my strong work ethic, analytical problem-solving skills and the ability to contribute positively in dynamic, multidisciplinary teams.</p>
+                    <p className='mb-10 max-w-2xl font-ovo'>I am a frontend developer based in Oslo with over six years of experience in web and frontend development. I have strong expertise in PHP, MySQL, WordPress, SCSS, and JavaScript, along with working knowledge of modern frameworks such as Angular, React, Next.js, and TypeScript. I build responsive websites, e-commerce solutions, and custom systems, manage databases, use Git for version control, and implement designs from Figma. I am recognized for my strong work ethic, analytical problem-solving abilities, and my ability to contribute positively within dynamic, cross-functional teams.</p>
                     <motion.ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}

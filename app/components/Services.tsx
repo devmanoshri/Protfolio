@@ -27,7 +27,7 @@ function Services({ isDarkMode }: { isDarkMode: boolean }) {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.5 }}
-                className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>I develop responsive websites, e-commerce solutions and custom systems, handle databases, Git version control and design implementation via Figma. I am known for my strong work ethic, analytical problem-solving skills and the ability to contribute positively in dynamic, multidisciplinary teams.</motion.p>
+                className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>I specialize in building responsive websites, e-commerce solutions, and custom systems using technologies such as PHP, WordPress, MySQL, SCSS, and JavaScript, along with modern frameworks like React, Next.js, Angular, and TypeScript. I work with databases, Git version control, and design implementation via Figma, and I am known for my strong work ethic, analytical mindset, and ability to collaborate effectively in dynamic, multidisciplinary teams.</motion.p>
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

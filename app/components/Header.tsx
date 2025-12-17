@@ -28,7 +28,7 @@ function Header({ isDarkMode }: { isDarkMode: boolean }) {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className='max-w-2xl mx-auto font-ovo'>I work as a frontend developer in Oslo with over 6 years of experience in web and frontend development, with solid expertise in PHP, MySQL, WordPress, SCSS and JavaScript, as well as knowledge of modern frameworks such as Angular and TypeScript.
+                className='max-w-2xl mx-auto font-ovo'>I work as a frontend developer in Oslo with over 6 years of experience in web and frontend development, with solid expertise in PHP, MySQL, WordPress, SCSS and JavaScript, as well as knowledge of modern frameworks such as Angular, React, Next and TypeScript.
             </motion.p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                 <motion.a
