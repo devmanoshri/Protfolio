@@ -22,12 +22,21 @@ function Services({ isDarkMode }: { isDarkMode: boolean }) {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
                 className='text-center text-5xl font-ovo'>My services</motion.h2>
-
             <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.5 }}
-                className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>I specialize in building responsive websites, e-commerce solutions, and custom systems using technologies such as PHP, WordPress, MySQL, SCSS, and JavaScript, along with modern frameworks like React, Next.js, Angular, and TypeScript. I work with databases, Git version control, and design implementation via Figma, and I am known for my strong work ethic, analytical mindset, and ability to collaborate effectively in dynamic, multidisciplinary teams.</motion.p>
+                className='text-center max-w-2xl mx-auto mt-5 mb-2 font-ovo'>I design and develop responsive websites and custom systems, manage databases, use Git for version control, and implement design specifications from Figma. I have extensive experience developing and maintaining WordPress websites, including custom themes and plugins, SEO optimization, performance tuning, and security best practices.</motion.p>
+            <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.7, duration: 0.5 }}
+                className='text-center max-w-2xl mx-auto mt-5 mb-2 font-ovo'>In addition, have experience working with PHP frameworks such as CodeIgniter and have contributed to the development and maintenance of important government websites, as well as custom PHP-based content and management systems. Known for my strong work ethic and analytical problem-solving skills, I collaborate effectively within multidisciplinary teams to deliver scalable, secure, and user-friendly solutions across dynamic, fast-paced projects.</motion.p>
+            <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.7, duration: 0.5 }}
+                className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>I also have conceptual understanding of modern frontend technologies including Angular, React, Next.js, and TypeScript. I am highly motivated to work with these technologies in a professional environment and am eager to continuously learn, grow, and expand my skill set.</motion.p>
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

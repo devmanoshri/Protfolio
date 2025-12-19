@@ -27,19 +27,19 @@ function Work({ isDarkMode }: { isDarkMode: boolean }) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.5 }}
-        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>I develop responsive websites, e-commerce solutions and custom systems, handle databases, Git version control and design implementation via Figma. I am known for my strong work ethic, analytical problem-solving skills and the ability to contribute positively in dynamic, multidisciplinary teams.</motion.p>
+        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>A selection of recent projects showcasing my experience in building responsive, user-friendly interfaces and custom web solutions. This work highlights my frontend-focused approach using WordPress, PHP, and modern technologies, with a strong emphasis on performance, accessibility, and scalable user experiences. In addition, I actively develop and maintain various Angular, React, and Next.js projects on Git, reflecting my ongoing learning and hands-on practice with modern frontend frameworks.</motion.p>
 
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className='grid grid-cols-auto my-10 gap-5'>
+        className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6'>
         {
           workData.map((project, index) => (
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
-              key={index} className={`aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group ${isDarkMode ? 'text-black' : ''}`} style={{ backgroundImage: `url(${project.bgImage})` }} >
+              key={index} className={`bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group ${isDarkMode ? 'text-black' : ''}`} style={{ backgroundImage: `url(${project.bgImage})`, aspectRatio: '16/9' }} >
               <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 px-5 py-3 flex items-center justify-between duration-500 group-hover:bottom-7'>
                 <div className=''>
                   <h2 className='font-semibold'>{project.title}</h2>

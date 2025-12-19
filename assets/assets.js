@@ -37,7 +37,14 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import manoshri_profile_img from './manoshri-profile-img.jpg';
 import manoshri_logo_white from './manoshri-logo-white.png';
-import manoshri_logo_dark from './manoshri-logo-dark.png'
+import manoshri_logo_dark from './manoshri-logo-dark.png';
+import language_white from './language-white.png';
+import language_dark from './language-dark.png';
+import mysql_logo from './mysql-logo.png';
+import asana_logo from './asana-logo.png';
+import timelog_logo from './timelog_logo.png';
+
+
 
 export const assets = {
     user_image,
@@ -79,25 +86,54 @@ export const assets = {
     right_arrow_bold_dark,
     manoshri_profile_img,
     manoshri_logo_white,
-    manoshri_logo_dark
-    
+    manoshri_logo_dark,
+    language_white,
+    language_dark,
+    mysql_logo,
+    asana_logo,
+    timelog_logo
+
 };
 
 export const workData = [
     {
         title: 'Frontend project',
         description: 'Web Design',
-        bgImage: '/work-1.png',
+        bgImage: '/norfundweb.png',
+        projectLink : 'https://www.norfund.no/',
     },
     {
         title: 'Geo based app',
         description: 'Mobile App',
-        bgImage: '/work-2.png',
+        bgImage: '/vitaminenweb.png',
+        projectLink : 'https://vitaminen.no/',
     },
     {
         title: 'Photography site',
         description: 'Web Design',
-        bgImage: '/work-3.png',
+        bgImage: '/firesafeweb.png',
+        projectLink: 'https://www.firesafe.no/',
+        
+    },
+    {
+        title: 'UI/UX designing',
+        description: 'UI/UX Design',
+        bgImage: '/work-4.png',
+    },
+    {
+        title: 'Frontend project',
+        description: 'Web Design',
+        bgImage: '/norfundweb.png',
+    },
+    {
+        title: 'Geo based app',
+        description: 'Mobile App',
+        bgImage: '/vitaminenweb.png',
+    },
+    {
+        title: 'Photography site',
+        description: 'Web Design',
+        bgImage: '/firesafeweb.png',
     },
     {
         title: 'UI/UX designing',
@@ -114,11 +150,12 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Technical Skill', description: 'HTML, SCSS, JavaScript,Typrscript, Angular, React, Next JS' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Masters in Computer Applications' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    // { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.language_white, iconDark: assets.language_dark, title: 'Language', description: 'Norsk, English, Bengali' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.mysql_logo, assets.figma, assets.git, assets.asana_logo, assets.timelog_logo
 ];
