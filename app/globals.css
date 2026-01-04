@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   --light-hover: #fcf4ff;
   --dark-hover: #2a004a;
@@ -9,7 +8,6 @@
   --text-light: #000000;
   --text-dark: #ffffff;
 }
-
 
 * {
   font-family: Outfit;
@@ -20,11 +18,9 @@ html {
   background-color: var(--background);
 }
 
-
 .font-outfit {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
-
 
 /* Dark Mode Variables */
 .dark {
@@ -32,10 +28,8 @@ html {
   --text-color: var(--text-dark);
 }
 
-
-
 .font-ovo {
-  font-family: 'Ovo', sans-serif;
+  font-family: "Ovo", sans-serif;
 }
 
 .shadow-white:hover {
@@ -52,12 +46,10 @@ html {
 
 ul.bg-darkHover {
   background-color: var(--dark-theme);
-  ;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
   text-decoration-color: var(--text-color);
   text-underline-offset: 2px;
-  
 }

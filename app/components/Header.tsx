@@ -1,50 +1,72 @@
-import { assets } from '@/assets/assets'
-import Image from 'next/image'
-import React from 'react'
-import { motion } from "motion/react"
+import { assets } from "@/assets/assets";
+import { motion } from "motion/react";
+import Image from "next/image";
 
 function Header({ isDarkMode }: { isDarkMode: boolean }) {
-    return (
-        <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
-            <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
-            >
-                <Image src={assets.manoshri_profile_img} alt='profile-image' className='rounded-full w-32' />
-            </motion.div>
-            <motion.h3
-                initial={{ y: -20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo'>Hi! I'm Manoshri Chattopadhyay <Image src={assets.hand_icon} alt='hand icon' className='w-6' /></motion.h3>
+  return (
+    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+      <motion.div
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+      >
+        <Image
+          src={assets.manoshri_profile_img}
+          alt="profile-image"
+          className="rounded-full w-32"
+        />
+      </motion.div>
+      <motion.h3
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo"
+      >
+        Hi! I'm Manoshri Chattopadhyay{" "}
+        <Image src={assets.hand_icon} alt="hand icon" className="w-6" />
+      </motion.h3>
 
-            <motion.h1
-                initial={{ y: -30, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>Frontend web developer based in Oslo</motion.h1>
-            <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.7 }}
-                className='max-w-2xl mx-auto font-ovo'>I work as a frontend developer in Oslo with over 6 years of experience in web and frontend development, with solid expertise in PHP, MySQL, WordPress, SCSS and JavaScript, as well as knowledge of modern frameworks such as Angular, React, Next and TypeScript.
-            </motion.p>
-            <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
-                <motion.a
+      <motion.h1
+        initial={{ y: -30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className="text-3xl sm:text-6xl lg:text-[66px] font-ovo"
+      >
+        Web developer based in Oslo
+      </motion.h1>
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
+        className="max-w-2xl mx-auto font-ovo"
+      >
+        I work as a web developer in Oslo with over 6+ years of experience
+        in web development, with solid expertise in PHP, MySQL,
+        WordPress, SCSS and JavaScript, as well as knowledge of modern
+        frameworks such as Angular, React, Next and TypeScript.
+      </motion.p>
+      <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          href="#contact"
+          className={`px-10 py-3 border rounded-full bg-black text-white border-gray-500 flex items-center gap-2 ${
+            isDarkMode ? "bg-transparent" : ""
+          }`}
+        >
+          Contact me{" "}
+          <Image src={assets.right_arrow_white} alt="arrow" className="w-4" />
+        </motion.a>
+
+        {/* <motion.a
                     initial={{ y: 30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 1.2 }}
-                    href="#contact" className={`px-10 py-3 border rounded-full bg-black text-white border-gray-500 flex items-center gap-2 ${isDarkMode ? 'bg-transparent' : ''}`}>Contact me <Image src={assets.right_arrow_white} alt='arrow' className='w-4' /></motion.a>
-
-                <motion.a
-                    initial={{ y: 30, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.6, delay: 1.2 }}
-                    href="/sample-resume.pdf" download className={`px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white ${isDarkMode ? 'text-black' : ''}`}>My resume <Image src={assets.download_icon} alt='arrow' className='w-4' /></motion.a>
-            </div>
-        </div>
-    )
+                    href="#" download className={`px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white ${isDarkMode ? 'text-black' : ''}`}>My resume <Image src={assets.download_icon} alt='arrow' className='w-4' /></motion.a> */}
+      </div>
+    </div>
+  );
 }
 
-export default Header
+export default Header;
